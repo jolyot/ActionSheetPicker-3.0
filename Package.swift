@@ -13,7 +13,10 @@ let package = Package(
     targets: [
         .target(
             name: "ActionSheetPicker-3.0",
-            path: "CoreActionSheetPicker")
+            path: "CoreActionSheetPicker"),
+        .testTarget(
+            name: "CoreActionSheetPickerTests",
+            dependencies: ["ActionSheetPicker-3.0"])
         ],
     swiftLanguageVersions: [.v5]
 )
